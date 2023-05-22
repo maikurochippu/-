@@ -1,0 +1,70 @@
+{
+  "lazyCodeLoading": "requiredComponents",
+  "pages": [
+    "pages/index/index",
+    "pages/video/video",
+    "pages/personal/personal",
+    "pages/fm/fm",
+    "pages/login-verify/login",
+    "pages/login-QR/QR",
+    "pages/recommendSong/recommendSong",
+    "pages/songDetail/songDetail",
+    "pages/playlist/playlist",
+    "pages/search/search",
+    "pages/manage/manage",
+    "pages/song/song",
+    "pages/top/top",
+    "pages/songer/songer",
+    "pages/songerlist/songerlist",
+    "pages/fmlist/fmlist",
+    "pages/fmDetail/fmDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#17abe3",
+    "navigationBarTitleText": "云音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#17abe3",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/static/images/tabs/home.png",
+        "selectedIconPath": "/static/images/tabs/home-current.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "/static/images/tabs/video.png",
+        "selectedIconPath": "/static/images/tabs/video-current.png"
+      },
+      {
+        "pagePath": "pages/fm/fm",
+        "text": "电台",
+        "iconPath": "/static/images/tabs/fm.png",
+        "selectedIconPath": "/static/images/tabs/fm-current.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/static/images/tabs/my.png",
+        "selectedIconPath": "/static/images/tabs/my-current.png"
+      },
+      {
+        "pagePath": "pages/manage/manage",
+        "text": "公告",
+        "iconPath": "/static/images/tabs/notice.png",
+        "selectedIconPath": "/static/images/tabs/notice-current.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,24 @@
+/* pages/login-QR/Qr.wxss */
+.wrapper{
+  position:relative;
+  z-index: 90;
+  padding-bottom: 40rpx;
+}
+
+.left-top-sign{
+  font-size: 120rpx;
+  color: #f8f8f8;
+  position:relative;
+}
+
+.welcome{
+  position:relative;
+  left: 50rpx;
+  top: -90rpx;
+  font-size: 46rpx;
+  color: #555;
+}
+image{
+  width: 320px;
+  height: 320px;
+}

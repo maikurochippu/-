@@ -1,0 +1,15 @@
+<!--pages/login-QR/Qr.wxml-->
+
+
+<view class="wrapper">
+  <view class="left-top-sign">LOGIN</view>
+  <view class="welcome">
+    欢迎回来！
+  </view>
+  <view style="text-align: center;">
+  <image src="{{pic}}" show-menu-by-longpress='1'></image>
+  <view style="font-size: 46rpx;">请扫码登录</view>
+  </view>
+</view>
+
+

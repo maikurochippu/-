@@ -1,0 +1,17 @@
+/* pages/manage/manage.wxss */
+.title{
+  font-size: 48rpx;
+  text-align: center;
+}
+/*分割线样式*/
+.divLine{
+  background: #E0E3DA;
+  width: 100%;
+  height: 5rpx;
+}
+.index{
+  margin: 10rpx;
+}
+.index view{
+  margin: 10rpx;
+}

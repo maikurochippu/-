@@ -1,0 +1,90 @@
+/* pages/toplist/toplist.wxss */
+/*总标题*/
+.allTitle{
+  font-size: 48rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+/*排行榜*/
+.topList{
+  padding: 20rpx;
+}
+
+.topListSwiper{
+  height: 680rpx;
+}
+
+.swiperItem{
+  width: 90%;
+  background: #fbfbfb;
+}
+
+.swiperItem .title{
+  width: 90%;
+  font-size: 32rpx;
+  line-height: 80rpx;
+}
+
+.swiperItem  .more{
+  float:right;
+  width: 10%;
+  border: 1rpx solid #333;
+  margin-block: 20rpx;
+  padding: 5rpx 20rpx;
+  font-size:24rpx ;
+  border-radius:30rpx ;
+}
+
+.musicItem{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+.musicItem image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 6rpx;
+}
+
+.musicItem .count{
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.musicItem .musicName{
+  height: 100rpx;
+  line-height:100rpx;
+  max-width: 400rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 列表 */
+.list{
+  padding: 20rpx;
+}
+.listScroll{
+  margin-top: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.listScroll .scrollItem{
+  width: 200rpx;
+  margin: 10rpx;
+}
+.listScroll .scrollItem image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.listScroll .scrollItem text{
+  font-size: 26rpx;
+  width: 200rpx;
+  white-space: nowrap; 
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}

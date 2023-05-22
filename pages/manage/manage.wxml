@@ -1,0 +1,26 @@
+<!--pages/manage/manage.wxml-->
+<view>
+  <view class="title">个人毕业设计</view>
+  <!-- 分割线 -->
+  <view class="index">
+  <view class="divLine"></view>
+  <view style="text-align:right;">基于网易云api音乐小程序</view>
+  <view>进度</view>
+  <view>歌单页√，排行榜√，热门歌手√</view>
+  <view>电台页部分电台进不去×id找错了</view>
+  <view>个人中心页我的音乐，我的歌单，我的歌手√</view>
+  <view>组件绑定事件√</view>
+  <view>尝试将每日推荐和歌手歌曲和歌曲页合并，，将页面改成音乐0电台1歌手2</view>
+  <view>视频页点赞特效加上</view>
+  <view class="divLine"></view>
+  <view>问题</view>
+  <view>将cookie封装进请求函数√</view>
+  <view>好多同步异步问题需要处理</view>
+  <view>歌单页放置问题√</view>
+  <view>滚动条真丑，应该隐藏(修改全局wxss)√</view>
+  <view>有的时候登录不进去(用基本函数重写解决调用函数异步问题)√</view>
+  <view>歌单页正在播放时，切换别的歌单页自动播放下一首会出错</view>
+  <view>反复触底碰撞(加标识符运行完才能再次碰撞)√</view>
+  <view>解决只能显示一个歌手的问题</view>
+  </view>
+</view>

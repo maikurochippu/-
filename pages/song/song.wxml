@@ -1,0 +1,35 @@
+<!--pages/songList/songList.wxml-->
+<view>
+  <!-- 导航区域 -->
+  <scroll-view
+      scroll-x
+      class="navScroll"
+      enable-flex
+      scroll-into-view="{{'scroll' + navId}}"
+      scroll-with-animation
+  >
+    <view id="{{'scroll' + item.id}}" class="navItem" wx:for="{{GroupList}}" wx:key="id">
+      <view class="navContent {{navId === item.id?'active': ''}}" bindtap="changeNav" id="{{item.id}}" data-name="{{item.name}}">
+        {{item.name}}
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 列表区域 -->
+  <view class="list">
+  <scroll-view
+      scroll-y
+      class="listScroll"
+      refresher-enabled
+      bindrefresherrefresh="handleRefresher"
+      refresher-triggered="{{isTriggered}}"
+      bindscrolltolower="handleToLower"
+      enable-flex
+  >
+    <view class="scrollItem" wx:for="{{List}}" wx:key="id" id="{{item.id}}"  bindtap="toPlayList">
+      <image src="{{item.coverImgUrl}}"></image>
+    <text>{{item.name}}</text>
+    </view>
+  </scroll-view>
+</view>
+</view>

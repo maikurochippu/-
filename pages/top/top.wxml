@@ -1,0 +1,33 @@
+<!--pages/toplist/toplist.wxml-->
+  <!--排行榜-->
+  <view class="topList">
+    <view class="allTitle">官方榜</view>
+    <swiper class="topListSwiper" next-margin="50rpx" circular previous-margin="50rpx">
+      <swiper-item wx:for="{{topList}}" wx:key="name">
+        <view class="swiperItem">
+        <view style="display: flex;">
+          <view class="title">{{item.name}}</view>
+          <view class="more" id="{{item.id}}" data-type="0" bindtap="toPlayList">更多</view>
+        </view>
+          <view class="musicItem" wx:for="{{item.tracks}}" wx:key="id" wx:for-item="musicItem">
+            <image src="{{musicItem.al.picUrl}}"></image>
+            <text class="count">{{index+1}}</text>
+            <text class="musicName" bindtap="toSongDetail" id="{{musicItem.id}}">{{musicItem.name}}</text>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+    <view class="allTitle">精选榜</view>
+    <view class="list">
+  <scroll-view
+      scroll-y
+      class="listScroll"
+      enable-flex
+  >
+    <view class="scrollItem" wx:for="{{Top}}" wx:key="id"id="{{item.id}}" data-type="0" bindtap="toPlayList">
+      <image src="{{item.coverImgUrl}}"></image>
+    <text id="{{item.id}}">{{item.name}}</text>
+    </view>
+  </scroll-view>
+    </view>
+  </view>

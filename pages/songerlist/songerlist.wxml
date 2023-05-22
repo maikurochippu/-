@@ -1,0 +1,24 @@
+<!--pages/songerlist/songerlist.wxml-->
+<view class="recommendSongContainer">
+  <!-- 头部 -->
+  <view class="header">
+    <image src="/static/images/background.jpg"></image>
+  </view>
+  <!-- 列表区域 -->
+  <view class="ListContainer">
+    <view class="listHeader">
+      <text>播放全部</text>
+    </view>
+    <!-- 歌曲 -->
+    <scroll-view scroll-y="true" class="listScroll">
+      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id" data-index="{{index}}" data-song="{{item}}" bindtap="toSongDetail">
+        <image src="{{item.al.picUrl}}"></image>
+        <view class="musicInfo">
+          <text class="musicName">{{item.name}}</text>
+          <text class="musicAuthor">{{item.ar[0].name}}</text>
+        </view>
+        <text class="iconfont icon-bofang"></text>
+      </view>
+    </scroll-view>
+  </view>
+</view>
