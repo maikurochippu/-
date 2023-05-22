@@ -25,9 +25,11 @@ Page({
          title: '请先登录',
          icon:'error',
          success: ()=>{
-           wx.navigateTo({
-            url: '/pages/login-QR/QR'
-          })
+           setTimeout(async()=>{
+            wx.reLaunch({
+              url: '/pages/personal/personal'
+            })
+           },200)
         }
       })
       return
